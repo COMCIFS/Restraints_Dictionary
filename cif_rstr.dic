@@ -165,13 +165,9 @@ save_
 save_restr_angle.atom_site_label_1
 
     _definition.id               '_restr_angle.atom_site_label_1'
-    _description.text
-;
-    Label for the atom at the end of one arm of the restrained angle
-;
     loop_
       _alias.definition_id
-          '_restr_angle_atom_site_label_1' 
+          '_restr_angle_atom_site_label_1'
     _name.category_id            restr_angle
     _name.object_id              atom_site_label_1
     _import.get             [{'save':restr_label  'file':templ_attr.cif}]
@@ -182,14 +178,9 @@ save_
 save_restr_angle.atom_site_label_2
 
     _definition.id               '_restr_angle.atom_site_label_2'
-    _description.text
-;
-    Label for the atom at the apex of the angle.
-;
-
     loop_
       _alias.definition_id
-          '_restr_angle_atom_site_label_2' 
+          '_restr_angle_atom_site_label_2'
     _name.category_id            restr_angle
     _name.object_id              atom_site_label_2
     _import.get             [{'save':restr_label  'file':templ_attr.cif}]
@@ -200,14 +191,9 @@ save_
 save_restr_angle.atom_site_label_3
 
     _definition.id               '_restr_angle.atom_site_label_3'
-    _description.text
-;
-    Label for the atom at the end of one arm of the restrained angle.
-;
-
     loop_
       _alias.definition_id
-          '_restr_angle_atom_site_label_3' 
+          '_restr_angle_atom_site_label_3'
     _name.category_id            restr_angle
     _name.object_id              atom_site_label_3
     _import.get             [{'save':restr_label  'file':templ_attr.cif}]
@@ -3244,5 +3230,12 @@ save_
 ;
       3.1.1  2021-03-20
 ;
-   Fixed a CIF2 syntax error. (A. Vaitkus)
+   Fixed a CIF2 syntax error.
+
+   Removed the _description.text data item from
+   the 'restr_angle.atom_site_label_1', 'restr_angle.atom_site_label_2'
+   and 'restr_angle.atom_site_label_3' save frames since the same data
+   item is already provided in the imported 'restr_label' save frame.
+
+   (A. Vaitkus)
 ;

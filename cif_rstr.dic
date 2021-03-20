@@ -15,8 +15,8 @@ data_CIF_RSTR
 
     _dictionary.title            CIF_RSTR
     _dictionary.class            Instance
-    _dictionary.version          3.1
-    _dictionary.date             2016-11-16
+    _dictionary.version          3.1.1
+    _dictionary.date             2021-03-20
     _dictionary.uri              www.iucr.org/cif/dic/cif_rstr.dic
     _dictionary.ddl_conformance  3.11.09
     _dictionary.namespace        CifRstr
@@ -1078,14 +1078,12 @@ save_
 save_restr_equal_angle_class.details
     _definition.id             '_restr_equal_angle_class.details'
      loop_
-    _alias.definition_id       '_restr_equal_angle_class_details'
-    _definition.update           2014-06-29
-    loop_
-      _alias.definition_id
-          '_restr_equal_angle_class_detail' 
-    _description.text                   
+    _alias.definition_id
+         '_restr_equal_angle_class_detail'
+         '_restr_equal_angle_class_details'
+    _definition.update           2021-03-20
+    _description.text
 ;
-
       A text description giving details of the class of angles that
       are restrained to be equal.
 ;
@@ -3239,8 +3237,12 @@ save_
     _dictionary_audit.date
     _dictionary_audit.revision
  
-      3.1   2016-11-16
+      3.1    2016-11-16
 ;
    Initial CIF2 version created from STAR2 version provided by Syd Hall
    (J Hester)
+;
+      3.1.1  2021-03-20
+;
+   Fixed a CIF2 syntax error. (A. Vaitkus)
 ;

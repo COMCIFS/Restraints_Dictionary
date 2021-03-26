@@ -15,8 +15,8 @@ data_CIF_RSTR
 
     _dictionary.title            CIF_RSTR
     _dictionary.class            Instance
-    _dictionary.version          3.1
-    _dictionary.date             2016-11-16
+    _dictionary.version          3.1.1
+    _dictionary.date             2021-03-20
     _dictionary.uri              www.iucr.org/cif/dic/cif_rstr.dic
     _dictionary.ddl_conformance  3.11.09
     _dictionary.namespace        CifRstr
@@ -165,13 +165,9 @@ save_
 save_restr_angle.atom_site_label_1
 
     _definition.id               '_restr_angle.atom_site_label_1'
-    _description.text
-;
-    Label for the atom at the end of one arm of the restrained angle
-;
     loop_
       _alias.definition_id
-          '_restr_angle_atom_site_label_1' 
+          '_restr_angle_atom_site_label_1'
     _name.category_id            restr_angle
     _name.object_id              atom_site_label_1
     _import.get             [{'save':restr_label  'file':templ_attr.cif}]
@@ -182,14 +178,9 @@ save_
 save_restr_angle.atom_site_label_2
 
     _definition.id               '_restr_angle.atom_site_label_2'
-    _description.text
-;
-    Label for the atom at the apex of the angle.
-;
-
     loop_
       _alias.definition_id
-          '_restr_angle_atom_site_label_2' 
+          '_restr_angle_atom_site_label_2'
     _name.category_id            restr_angle
     _name.object_id              atom_site_label_2
     _import.get             [{'save':restr_label  'file':templ_attr.cif}]
@@ -200,14 +191,9 @@ save_
 save_restr_angle.atom_site_label_3
 
     _definition.id               '_restr_angle.atom_site_label_3'
-    _description.text
-;
-    Label for the atom at the end of one arm of the restrained angle.
-;
-
     loop_
       _alias.definition_id
-          '_restr_angle_atom_site_label_3' 
+          '_restr_angle_atom_site_label_3'
     _name.category_id            restr_angle
     _name.object_id              atom_site_label_3
     _import.get             [{'save':restr_label  'file':templ_attr.cif}]
@@ -1078,14 +1064,12 @@ save_
 save_restr_equal_angle_class.details
     _definition.id             '_restr_equal_angle_class.details'
      loop_
-    _alias.definition_id       '_restr_equal_angle_class_details'
-    _definition.update           2014-06-29
-    loop_
-      _alias.definition_id
-          '_restr_equal_angle_class_detail' 
-    _description.text                   
+    _alias.definition_id
+         '_restr_equal_angle_class_detail'
+         '_restr_equal_angle_class_details'
+    _definition.update           2021-03-20
+    _description.text
 ;
-
       A text description giving details of the class of angles that
       are restrained to be equal.
 ;
@@ -3239,8 +3223,19 @@ save_
     _dictionary_audit.date
     _dictionary_audit.revision
  
-      3.1   2016-11-16
+      3.1    2016-11-16
 ;
    Initial CIF2 version created from STAR2 version provided by Syd Hall
    (J Hester)
+;
+      3.1.1  2021-03-20
+;
+   Fixed a CIF2 syntax error.
+
+   Removed the _description.text data item from
+   the 'restr_angle.atom_site_label_1', 'restr_angle.atom_site_label_2'
+   and 'restr_angle.atom_site_label_3' save frames since the same data
+   item is already provided in the imported 'restr_label' save frame.
+
+   (A. Vaitkus)
 ;

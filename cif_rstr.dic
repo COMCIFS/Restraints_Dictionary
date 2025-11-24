@@ -1,4 +1,5 @@
 #\#CIF_2.0
+# SPDX-License-Identifier: CC-BY-4.0
 ##############################################################################
 #                                                                            #
 #           CIF RESTRAINTS AND CONSTRAINTS DICTIONARY VERSION 1.0            #
@@ -16,10 +17,11 @@ data_CIF_RSTR
     _dictionary.title            CIF_RSTR
     _dictionary.class            Instance
     _dictionary.version          3.1.1
-    _dictionary.date             2024-05-15
-    _dictionary.uri              www.iucr.org/cif/dic/cif_rstr.dic
-    _dictionary.ddl_conformance  3.11.09
-    _dictionary.namespace        CifRstr
+    _dictionary.date             2025-11-24
+    _dictionary.uri
+https://raw.githubusercontent.com/COMCIFS/Restraints_Dictionary/main/cif_rstr.dic
+    _dictionary.ddl_conformance  4.2.0
+    _dictionary.namespace        CifCore
     _description.text                   
 ;
  The items in this dictionary are designed for reporting the restraints     
@@ -73,24 +75,23 @@ data_CIF_RSTR
    _atom_site_refinement_flags_posn                                         
    _atom_site_restraints                                                    
                                                                             
-
-
 ;
 
-save_CIF_RSTR
+save_CIF_RSTR_HEAD
 
-    _definition.id               CIF_RSTR
+    _definition.id               CIF_RSTR_HEAD
     _definition.scope            Category
     _definition.class            Head
-    _definition.update           2024-05-15
+    _definition.update           2025-11-24
     _description.text                   
 ;
 
-     The CIF_RSTR group contains the definitions of data items that
-     are used to restrain and constrain crystallographic parameters.
+     The CIF_RSTR_HEAD category is the top-level category for all categories
+     in the CIF_RSTR dictionary. Definitions in this dictionary are used to
+     restrain and constrain crystallographic parameters.
 ;
-    _name.category_id            CIF_DIC
-    _name.object_id              CIF_RSTR
+    _name.category_id            CIF_RSTR
+    _name.object_id              CIF_RSTR_HEAD
     _import.get
         [
          {'dupl':Ignore  'file':cif_core.dic  'mode':Full  'save':CIF_CORE_HEAD}
@@ -3232,7 +3233,7 @@ save_
    Initial CIF2 version created from STAR2 version provided by Syd Hall
    (J Hester)
 ;
-      3.1.1  2024-05-15
+      3.1.1  2025-11-24
 ;
    Fixed a CIF2 syntax error.
 
@@ -3245,4 +3246,7 @@ save_
    category name.
 
    (A. Vaitkus)
+
+   2025-11-24: Changed Head category name for this dictionary and updated
+   _dictionary.namespace in accordance with COMCIFS principles (bm).
 ;

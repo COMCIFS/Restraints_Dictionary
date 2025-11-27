@@ -2848,7 +2848,8 @@ save_restr_u_similar.site_symmetry_1
     _name.category_id             restr_u_similar
     _name.object_id               site_symmetry_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get
+        [{'file':templ_attr.cif  'save':site_symmetry}]
 
 save_
 
@@ -2859,7 +2860,8 @@ save_restr_u_similar.site_symmetry_2
     _name.category_id             restr_u_similar
     _name.object_id               site_symmetry_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get
+        [{'file':templ_attr.cif  'save':site_symmetry}]
 
 save_
 

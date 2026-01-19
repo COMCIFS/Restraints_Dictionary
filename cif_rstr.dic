@@ -15,7 +15,7 @@ data_CIF_RSTR
     _dictionary.title             CIF_RSTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2025-11-27
+    _dictionary.date              2026-01-19
     _dictionary.uri
 ;\
 https://raw.githubusercontent.com/COMCIFS/Restraints_Dictionary/main/\
@@ -2801,7 +2801,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2025-11-27
+         3.1.1                    2026-01-19
 ;
        Fixed a CIF2 syntax error.
 

@@ -636,8 +636,8 @@ save_restr_distance_min.distance
 ;
     _name.category_id             restr_distance_min
     _name.object_id               distance
-    _type.purpose                 Measurand
-    _type.source                  Derived
+    _type.purpose                 Number
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -887,8 +887,8 @@ save_restr_equal_angle_class.average
 ;
     _name.category_id             restr_equal_angle_class
     _name.object_id               average
-    _type.purpose                 Measurand
-    _type.source                  Derived
+    _type.purpose                 Number
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -1143,8 +1143,8 @@ save_restr_equal_distance_class.average
 ;
     _name.category_id             restr_equal_distance_class
     _name.object_id               average
-    _type.purpose                 Measurand
-    _type.source                  Derived
+    _type.purpose                 Number
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -1453,8 +1453,8 @@ save_restr_equal_torsion_class.average
 ;
     _name.category_id             restr_equal_torsion_class
     _name.object_id               average
-    _type.purpose                 Measurand
-    _type.source                  Derived
+    _type.purpose                 Number
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -2027,8 +2027,8 @@ save_restr_plane_class.displacement_avsu
 ;
     _name.category_id             restr_plane_class
     _name.object_id               displacement_avsu
-    _type.purpose                 Measurand
-    _type.source                  Derived
+    _type.purpose                 Number
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -2826,4 +2826,9 @@ save_
        -> 'Value of _atom_site.occupancy'). (bm)
 
        2026-01-23: Replaced 'restr_label' imports with 'atom_site_id' imports.
+
+       2026-01-23: Replaced all 'Measurand' values as 'Number'
+       (because constraints and restraints are specified during
+       refinement and not taken from the experiment) and likewise
+       changed their _type.source from 'Derived' to 'Assigned'. (bm)
 ;

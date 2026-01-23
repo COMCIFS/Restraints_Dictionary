@@ -15,7 +15,7 @@ data_CIF_RSTR
     _dictionary.title             CIF_RSTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2026-01-19
+    _dictionary.date              2026-01-23
     _dictionary.uri
 ;\
 https://raw.githubusercontent.com/COMCIFS/Restraints_Dictionary/main/\
@@ -166,7 +166,7 @@ save_restr_angle.atom_site_label_1
     _name.category_id             restr_angle
     _name.object_id               atom_site_label_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -177,7 +177,7 @@ save_restr_angle.atom_site_label_2
     _name.category_id             restr_angle
     _name.object_id               atom_site_label_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -188,7 +188,7 @@ save_restr_angle.atom_site_label_3
     _name.category_id             restr_angle
     _name.object_id               atom_site_label_3
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -342,7 +342,7 @@ save_restr_distance.atom_site_label_1
     _name.category_id             restr_distance
     _name.object_id               atom_site_label_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -353,7 +353,7 @@ save_restr_distance.atom_site_label_2
     _name.category_id             restr_distance
     _name.object_id               atom_site_label_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -530,7 +530,7 @@ save_restr_distance_min.atom_site_label_1
     _name.category_id             restr_distance_min
     _name.object_id               atom_site_label_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -541,7 +541,7 @@ save_restr_distance_min.atom_site_label_2
     _name.category_id             restr_distance_min
     _name.object_id               atom_site_label_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -757,7 +757,7 @@ save_restr_equal_angle.atom_site_label_1
     _name.category_id             restr_equal_angle
     _name.object_id               atom_site_label_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -768,7 +768,7 @@ save_restr_equal_angle.atom_site_label_2
     _name.category_id             restr_equal_angle
     _name.object_id               atom_site_label_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -779,7 +779,7 @@ save_restr_equal_angle.atom_site_label_3
     _name.category_id             restr_equal_angle
     _name.object_id               atom_site_label_3
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -1036,7 +1036,7 @@ save_restr_equal_distance.atom_site_label_1
     _name.category_id             restr_equal_distance
     _name.object_id               atom_site_label_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -1047,7 +1047,7 @@ save_restr_equal_distance.atom_site_label_2
     _name.category_id             restr_equal_distance
     _name.object_id               atom_site_label_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -1300,7 +1300,7 @@ save_restr_equal_torsion.atom_site_label_1
     _name.category_id             restr_equal_torsion
     _name.object_id               atom_site_label_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -1311,7 +1311,7 @@ save_restr_equal_torsion.atom_site_label_2
     _name.category_id             restr_equal_torsion
     _name.object_id               atom_site_label_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -1322,7 +1322,7 @@ save_restr_equal_torsion.atom_site_label_3
     _name.category_id             restr_equal_torsion
     _name.object_id               atom_site_label_3
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -1333,7 +1333,7 @@ save_restr_equal_torsion.atom_site_label_4
     _name.category_id             restr_equal_torsion
     _name.object_id               atom_site_label_4
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -2328,7 +2328,7 @@ save_restr_torsion.atom_site_label_1
     _name.category_id             restr_torsion
     _name.object_id               atom_site_label_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -2339,7 +2339,7 @@ save_restr_torsion.atom_site_label_2
     _name.category_id             restr_torsion
     _name.object_id               atom_site_label_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -2350,7 +2350,7 @@ save_restr_torsion.atom_site_label_3
     _name.category_id             restr_torsion
     _name.object_id               atom_site_label_3
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -2361,7 +2361,7 @@ save_restr_torsion.atom_site_label_4
     _name.category_id             restr_torsion
     _name.object_id               atom_site_label_4
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -2568,7 +2568,7 @@ save_restr_u_rigid.atom_site_label_1
     _name.category_id             restr_u_rigid
     _name.object_id               atom_site_label_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -2579,7 +2579,7 @@ save_restr_u_rigid.atom_site_label_2
     _name.category_id             restr_u_rigid
     _name.object_id               atom_site_label_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -2724,7 +2724,7 @@ save_restr_u_similar.atom_site_label_1
     _name.category_id             restr_u_similar
     _name.object_id               atom_site_label_1
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -2735,7 +2735,7 @@ save_restr_u_similar.atom_site_label_2
     _name.category_id             restr_u_similar
     _name.object_id               atom_site_label_2
 
-    _import.get                   [{'file':templ_attr.cif  'save':restr_label}]
+    _import.get                   [{'file':templ_attr.cif  'save':atom_site_id}]
 
 save_
 
@@ -2801,7 +2801,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2026-01-19
+         3.1.1                    2026-01-23
 ;
        Fixed a CIF2 syntax error.
 
@@ -2824,4 +2824,6 @@ save_
        clarified the interpretation of the enumeration details in
        _restr_parameter_class.parameter_type (e.g. 'atom_site.occupancy'
        -> 'Value of _atom_site.occupancy'). (bm)
+
+       2026-01-23: Replaced 'restr_label' imports with 'atom_site_id' imports.
 ;

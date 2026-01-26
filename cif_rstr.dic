@@ -2800,12 +2800,17 @@ save_
 #  The dictionary's creation history.
 #============================================================================
 
+    _dictionary_author.id         1
+    _dictionary_author.name       'Brown, I. D.'
+    _dictionary_author.id_orcid   0000-0002-6267-2692
+    _dictionary_author.email      .
+
     loop_
       _dictionary_audit.version
       _dictionary_audit.date
       _dictionary_audit.revision
 
-         3.1                      2016-11-16
+         3.1.0                    2016-11-16
 ;
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)

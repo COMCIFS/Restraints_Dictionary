@@ -15,7 +15,7 @@ data_CIF_RSTR
     _dictionary.title             CIF_RSTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2026-01-23
+    _dictionary.date              2026-01-26
     _dictionary.uri
 ;\
 https://raw.githubusercontent.com/COMCIFS/Restraints_Dictionary/main/\
@@ -310,6 +310,7 @@ save_restr_angle.target_weight_param
     _type.contents                Real
     _enumeration.range            0:180
     _enumeration.default          0
+    _units.code                   degrees
 
 save_
 
@@ -491,7 +492,7 @@ save_restr_distance_min.a
 
     _definition.id                '_restr_distance_min.A'
     _alias.definition_id          '_restr_distance_min_A'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
       The weight associated with the difference between the
@@ -520,6 +521,7 @@ save_restr_distance_min.a
     _type.contents                Real
     _enumeration.range            0:
     _enumeration.default          0
+    _units.code                   none
 
 save_
 
@@ -570,7 +572,7 @@ save_restr_distance_min.c
 
     _definition.id                '_restr_distance_min.C'
     _alias.definition_id          '_restr_distance_min_C'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
       See _restr_distance_min.A for description.
@@ -581,6 +583,7 @@ save_restr_distance_min.c
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -607,7 +610,7 @@ save_restr_distance_min.difference
 
     _definition.id                '_restr_distance_min.difference'
     _alias.definition_id          '_restr_distance_min_difference'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-23
     _description.text
 ;
       The difference in angstroms between the refined distance
@@ -629,7 +632,7 @@ save_restr_distance_min.distance
 
     _definition.id                '_restr_distance_min.distance'
     _alias.definition_id          '_restr_distance_min_distance'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-23
     _description.text
 ;
       The refined distance, D, between the two atoms.
@@ -649,7 +652,7 @@ save_restr_distance_min.e
 
     _definition.id                '_restr_distance_min.E'
     _alias.definition_id          '_restr_distance_min_E'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
       See _restr_distance_min.A for description.
@@ -660,6 +663,7 @@ save_restr_distance_min.e
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -879,7 +883,7 @@ save_restr_equal_angle_class.average
 
     _definition.id                '_restr_equal_angle_class.average'
     _alias.definition_id          '_restr_equal_angle_class_average'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-23
     _description.text
 ;
       The average angle in the class of angles restrained to
@@ -986,7 +990,7 @@ save_restr_equal_angle_class.target_weight_param
 
     _definition.id                '_restr_equal_angle_class.target_weight_param'
     _alias.definition_id          '_restr_equal_angle_class_target_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
       The weighting parameter = sqrt(1/weight).
@@ -1004,6 +1008,7 @@ save_restr_equal_angle_class.target_weight_param
     _type.contents                Real
     _enumeration.range            0:
     _enumeration.default          0
+    _units.code                   degrees
 
 save_
 
@@ -1135,7 +1140,7 @@ save_restr_equal_distance_class.average
 
     _definition.id                '_restr_equal_distance_class.average'
     _alias.definition_id          '_restr_equal_distance_class_average'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-23
     _description.text
 ;
       The average distance in the class of distances restrained to
@@ -1445,7 +1450,7 @@ save_restr_equal_torsion_class.average
 
     _definition.id                '_restr_equal_torsion_class.average'
     _alias.definition_id          '_restr_equal_torsion_class_average'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-23
     _description.text
 ;
       The average torsion angle in the class of torsion angles
@@ -1605,7 +1610,7 @@ save_restr_parameter.atom_coefficient
 
     _definition.id                '_restr_parameter.atom_coefficient'
     _alias.definition_id          '_restr_parameter_atom_coefficient'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
       A parameter that scales the quantity being restrained.
@@ -1619,6 +1624,7 @@ save_restr_parameter.atom_coefficient
     _type.container               Single
     _type.contents                Real
     _enumeration.default          1.
+    _units.code                   none
 
 save_
 
@@ -1767,7 +1773,7 @@ save_restr_parameter_class.target
 
     _definition.id                '_restr_parameter_class.target'
     _alias.definition_id          '_restr_parameter_class_target'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
       The target value for the sum of values of the appropriate
@@ -1779,6 +1785,7 @@ save_restr_parameter_class.target
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1786,7 +1793,7 @@ save_restr_parameter_class.target_weight_param
 
     _definition.id                '_restr_parameter_class.target_weight_param'
     _alias.definition_id          '_restr_parameter_class_target_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
       Weighting parameter = sqrt(1/weight).
@@ -1805,6 +1812,7 @@ save_restr_parameter_class.target_weight_param
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0
+    _units.code                   none
 
 save_
 
@@ -2020,7 +2028,7 @@ save_restr_plane_class.displacement_avsu
 
     _definition.id                '_restr_plane_class.displacement_avsu'
     _alias.definition_id          '_restr_plane_class_displacement_esd'
-    _definition.update            2014-07-30
+    _definition.update            2026-01-23
     _description.text
 ;
       The average standard uncertainty of atoms in this plane.
@@ -2237,7 +2245,7 @@ save_restr_rigid_body_class.class_id
 
     _definition.id                '_restr_rigid_body_class.class_id'
     _alias.definition_id          '_restr_rigid_body_class_class_id'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
       A character string that identifies the rigid body.
@@ -2246,7 +2254,7 @@ save_restr_rigid_body_class.class_id
     _name.category_id             restr_rigid_body_class
     _name.object_id               class_id
     _name.linked_item_id          '_restr_rigid_body.class_id'
-    _type.purpose                 Encode
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Code
@@ -2454,7 +2462,7 @@ save_restr_torsion.weight_param
 
     _definition.id                '_restr_torsion.weight_param'
     _alias.definition_id          '_restr_torsion_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
       Weighting parameter = sqrt(1/weight).
@@ -2473,6 +2481,7 @@ save_restr_torsion.weight_param
     _type.contents                Real
     _enumeration.range            0:
     _enumeration.default          0
+    _units.code                   degrees
 
 save_
 
@@ -2649,7 +2658,7 @@ save_restr_u_rigid.target_weight_param
 
     _definition.id                '_restr_U_rigid.target_weight_param'
     _alias.definition_id          '_restr_U_rigid_target_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-26
     _description.text
 ;
      The weighting parameter = sqrt(1/weight).
@@ -2801,7 +2810,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2026-01-23
+         3.1.1                    2026-01-26
 ;
        Fixed a CIF2 syntax error.
 
@@ -2831,4 +2840,13 @@ save_
        (because constraints and restraints are specified during
        refinement and not taken from the experiment) and likewise
        changed their _type.source from 'Derived' to 'Assigned'. (bm)
+
+       2026-01-26: Added _units.code to _restr_angle.target_weight_param,
+       _restr_distance_min.a, *_c and *_e (these three dimensionless),
+       _restr_equal_angle_class.target_weight_param,
+       _restr_parameter.atom_coefficient, _restr_parameter_class.target,
+       _restr_parameter_class.target_weight_param, _restr_torsion.weight_param.
+
+       Changed _type.purpose of _restr_rigid_body_class.class_id from
+       'Encode' to 'Link'. (bm)
 ;

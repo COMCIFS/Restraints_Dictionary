@@ -2021,19 +2021,20 @@ save_restr_plane_class.details
 
 save_
 
-save_restr_plane_class.displacement_avsu
+save_restr_plane_class.displacement_esd
 
-    _definition.id                '_restr_plane_class.displacement_avsu'
+    _definition.id                '_restr_plane_class.displacement_esd'
     _alias.definition_id          '_restr_plane_class_displacement_esd'
-    _definition.update            2026-01-23
+    _definition.update            2026-01-27
     _description.text
 ;
-      The average standard uncertainty of atoms in this plane.
+      The observed estimated standard deviation of the atoms from
+      this plane.
 ;
     _name.category_id             restr_plane_class
-    _name.object_id               displacement_avsu
+    _name.object_id               displacement_esd
     _type.purpose                 Number
-    _type.source                  Assigned
+    _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:

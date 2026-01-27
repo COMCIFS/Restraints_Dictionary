@@ -10,9 +10,9 @@
 #                                                                            #
 ##############################################################################
 
-data_CIF_RSTR
+data_CIF_RESTR
 
-    _dictionary.title             CIF_RSTR
+    _dictionary.title             CIF_RESTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
     _dictionary.date              2026-01-27
@@ -77,20 +77,20 @@ cif_rstr.dic
       _atom_site_restraints
 ;
 
-save_CIF_RSTR_HEAD
+save_CIF_RESTR_HEAD
 
-    _definition.id                CIF_RSTR_HEAD
+    _definition.id                CIF_RESTR_HEAD
     _definition.scope             Category
     _definition.class             Head
     _definition.update            2025-11-24
     _description.text
 ;
-     The CIF_RSTR_HEAD category is the top-level category for all categories
-     in the CIF_RSTR dictionary. Definitions in this dictionary are used to
+     The CIF_RESTR_HEAD category is the top-level category for all categories
+     in the CIF_RESTR dictionary. Definitions in this dictionary are used to
      restrain and constrain crystallographic parameters.
 ;
-    _name.category_id             CIF_RSTR
-    _name.object_id               CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR
+    _name.object_id               CIF_RESTR_HEAD
 
     _import.get
         [
@@ -110,7 +110,7 @@ save_RESTR
       This category is for describing restraints that cannot be
       described elsewhere.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR
 
 save_
@@ -146,7 +146,7 @@ save_RESTR_ANGLE
       Items in this category define angles that were restrained
       in the final refinement. Atom 2 is at the apex of the angle.
 ;
-    _name.category_id            CIF_RSTR_HEAD
+    _name.category_id            CIF_RESTR_HEAD
     _name.object_id              RESTR_ANGLE
     loop_
       _category_key.name
@@ -325,7 +325,7 @@ save_RESTR_DISTANCE
       This category describes restraints applied to
       distances during the final refinement.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_DISTANCE
     loop_
       _category_key.name
@@ -477,7 +477,7 @@ save_RESTR_DISTANCE_MIN
       expressions for a function designed to prevent two atoms
       occupying the same location.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_DISTANCE_MIN
     loop_
       _category_key.name
@@ -741,7 +741,7 @@ save_RESTR_EQUAL_ANGLE
       that are restrained to be equal in the final refinement.
       _atom_site_label_2 is at the apex of the angle.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_EQUAL_ANGLE
     loop_
       _category_key.name
@@ -873,7 +873,7 @@ save_RESTR_EQUAL_ANGLE_CLASS
       for each class of angles that are restrained to be equal
       in the final refinement.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_EQUAL_ANGLE_CLASS
     _category_key.name            '_restr_equal_angle_class.class_id'
 
@@ -1022,7 +1022,7 @@ save_RESTR_EQUAL_DISTANCE
       Items in this category list the atoms defining the distances
       that are restrained to be equal in the final refinement.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_EQUAL_DISTANCE
     loop_
       _category_key.name
@@ -1129,7 +1129,7 @@ save_RESTR_EQUAL_DISTANCE_CLASS
       for each class of distances that are restrained to be equal
       in the final refinement.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_EQUAL_DISTANCE_CLASS
     _category_key.name            '_restr_equal_distance_class.class_id'
 
@@ -1281,7 +1281,7 @@ save_RESTR_EQUAL_TORSION
       the plane defined by atoms 2, 3 and 4.
 
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_EQUAL_TORSION
     loop_
       _category_key.name
@@ -1438,7 +1438,7 @@ save_RESTR_EQUAL_TORSION_CLASS
       angles for each class of torsion angles that are restrained
       to be equal in the final refinement.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_EQUAL_TORSION_CLASS
     _category_key.name            '_restr_equal_torsion_class.class_id'
 
@@ -1597,7 +1597,7 @@ save_RESTR_PARAMETER
       first defines the atoms in each sum (class) and the
       second describes the properties of the class.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_PARAMETER
     _category_key.name            '_restr_parameter.id'
 
@@ -1699,7 +1699,7 @@ save_RESTR_PARAMETER_CLASS
       atoms in each sum (class) and the second describes the
       properties of the class.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_PARAMETER_CLASS
     _category_key.name            '_restr_parameter_class.class_id'
 
@@ -1824,7 +1824,7 @@ save_RESTR_PLANE
       Items in this category define the atoms that make up
       each class of plane.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_PLANE
     _category_key.name            '_restr_plane.id'
 
@@ -1979,7 +1979,7 @@ save_RESTR_PLANE_CLASS
       the different groups of atoms that are restrained
       to form a plane.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_PLANE_CLASS
     _category_key.name            '_restr_plane_class.class_id'
 
@@ -2124,7 +2124,7 @@ save_RESTR_RIGID_BODY
       RESTR_RIGID_BODY_CLASS, permits a description
       of each rigid body to be given in a *_details item.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_RIGID_BODY
     _category_key.name            '_restr_rigid_body.id'
 
@@ -2233,7 +2233,7 @@ save_RESTR_RIGID_BODY_CLASS
       Items in this category give details of the different rigid
       bodies as defined by _restr_rigid_body.class_id
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_RIGID_BODY_CLASS
     _category_key.name            '_restr_rigid_body_class.class_id'
 
@@ -2290,7 +2290,7 @@ save_RESTR_TORSION
       angle between the plane defined by atoms 1, 2 and 3, and
       the plane defined by atoms 2, 3 and 4.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_TORSION
     loop_
       _category_key.name
@@ -2495,7 +2495,7 @@ save_RESTR_U_ISO
       atomic displacement isotropic within the range of the
       weighting parameter.  It corresponds to SHELX ISO.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_U_ISO
     _category_key.name            '_restr_U_iso.atom_site_label'
 
@@ -2557,7 +2557,7 @@ save_RESTR_U_RIGID
       within a certain *_target_weight_param along the
       direction of the vector joining the atoms.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_U_RIGID
     loop_
       _category_key.name
@@ -2713,7 +2713,7 @@ save_RESTR_U_SIMILAR
       of the weighting parameter.
       This is the same as SHELX SIMU.
 ;
-    _name.category_id             CIF_RSTR_HEAD
+    _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_U_SIMILAR
     loop_
       _category_key.name
@@ -2857,4 +2857,7 @@ save_
        RESTR_EQUAL_ANGLE_CLASS, RESTR_EQUAL_DISTANCE_CLASS and
        RESTR_EQUAL_TORSION_CLASS as these are true statistical e.s.d.s.
        Changed their _type.source to 'Derived' (bm).
+
+       Revised Head category name and _dictionary.namespace as agreed in
+       COMCIFS harmonisation project. (bm)
 ;

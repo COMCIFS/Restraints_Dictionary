@@ -17,10 +17,7 @@ data_CIF_RESTR
     _dictionary.version           3.1.1
     _dictionary.date              2026-01-27
     _dictionary.uri
-;\
-https://raw.githubusercontent.com/COMCIFS/Restraints_Dictionary/main/\
-cif_rstr.dic
-;
+        https://raw.githubusercontent.com/COMCIFS/cif_restr/main/cif_rstr.dic
     _dictionary.ddl_conformance   4.2.0
     _dictionary.namespace         CifCore
     _description.text

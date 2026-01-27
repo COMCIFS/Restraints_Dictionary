@@ -1537,7 +1537,7 @@ save_restr_equal_torsion_class.esd
       _restr_equal_torsion_class.target_weight_param.
 ;
     _name.category_id             restr_equal_torsion_class
-    _name.object_id               average_su
+    _name.object_id               esd
     _type.purpose                 Number
     _type.source                  Derived
     _type.container               Single

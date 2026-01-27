@@ -679,6 +679,8 @@ save_restr_distance_min.f
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
+    _enumeration.range            0:
+    _enumeration.default          0
     _units.code                   angstroms
 
 save_
@@ -2857,4 +2859,7 @@ save_
 
        Revised Head category name and _dictionary.namespace as agreed in
        COMCIFS harmonisation project. (bm)
+
+       Added _enumeration.range and _enumeration_default values to
+       _restr_distance_min.F. (bm)
 ;

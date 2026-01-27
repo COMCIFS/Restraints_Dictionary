@@ -15,7 +15,7 @@ data_CIF_RSTR
     _dictionary.title             CIF_RSTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2026-01-26
+    _dictionary.date              2026-01-27
     _dictionary.uri
 ;\
 https://raw.githubusercontent.com/COMCIFS/Restraints_Dictionary/main/\
@@ -900,30 +900,6 @@ save_restr_equal_angle_class.average
 
 save_
 
-save_restr_equal_angle_class.average_su
-
-    _definition.id                '_restr_equal_angle_class.average_su'
-    _alias.definition_id          '_restr_equal_angle_class_esd'
-    _definition.update            2014-07-30
-    _description.text
-;
-      The actual estimated standard deviation of the angles in the
-      class from their average after refinement.
-      This number is expected to be similar to the value set for
-      _restr_equal_angle_class.target_weight_param.
-;
-    _name.category_id             restr_equal_angle_class
-    _name.object_id               average_su
-    _name.linked_item_id          '_restr_equal_angle_class.average'
-    _type.purpose                 SU
-    _type.source                  Related
-    _type.container               Single
-    _type.contents                Real
-    _enumeration.range            0:
-    _units.code                   degrees
-
-save_
-
 save_restr_equal_angle_class.class_id
 
     _definition.id                '_restr_equal_angle_class.class_id'
@@ -977,6 +953,29 @@ save_restr_equal_angle_class.diff_max
 ;
     _name.category_id             restr_equal_angle_class
     _name.object_id               diff_max
+    _type.purpose                 Number
+    _type.source                  Derived
+    _type.container               Single
+    _type.contents                Real
+    _enumeration.range            0:
+    _units.code                   degrees
+
+save_
+
+save_restr_equal_angle_class.esd
+
+    _definition.id                '_restr_equal_angle_class.esd'
+    _alias.definition_id          '_restr_equal_angle_class_esd'
+    _definition.update            2026-01-27
+    _description.text
+;
+      The actual estimated standard deviation of the angles in the
+      class from their average after refinement.
+      This number is expected to be similar to the value set for
+      _restr_equal_angle_class.target_weight_param.
+;
+    _name.category_id             restr_equal_angle_class
+    _name.object_id               esd
     _type.purpose                 Number
     _type.source                  Derived
     _type.container               Single
@@ -1157,30 +1156,6 @@ save_restr_equal_distance_class.average
 
 save_
 
-save_restr_equal_distance_class.average_su
-
-    _definition.id                '_restr_equal_distance_class.average_su'
-    _alias.definition_id          '_restr_equal_distance_class_esd'
-    _definition.update            2014-07-30
-    _description.text
-;
-      The actual estimated standard deviation of the distances in the
-      class from their average after refinement.
-      This number is expected to be similar to the value set for
-      _restr_equal_distance_class.target_weight_param.
-;
-    _name.category_id             restr_equal_distance_class
-    _name.object_id               average_su
-    _name.linked_item_id          '_restr_equal_distance_class.average'
-    _type.purpose                 SU
-    _type.source                  Related
-    _type.container               Single
-    _type.contents                Real
-    _enumeration.range            0:
-    _units.code                   angstroms
-
-save_
-
 save_restr_equal_distance_class.class_id
 
     _definition.id                '_restr_equal_distance_class.class_id'
@@ -1231,6 +1206,29 @@ save_restr_equal_distance_class.diff_max
 ;
     _name.category_id             restr_equal_distance_class
     _name.object_id               diff_max
+    _type.purpose                 Number
+    _type.source                  Derived
+    _type.container               Single
+    _type.contents                Real
+    _enumeration.range            0:
+    _units.code                   angstroms
+
+save_
+
+save_restr_equal_distance_class.esd
+
+    _definition.id                '_restr_equal_distance_class.esd'
+    _alias.definition_id          '_restr_equal_distance_class_esd'
+    _definition.update            2026-01-27
+    _description.text
+;
+      The actual estimated standard deviation of the distances in the
+      class from their average after refinement.
+      This number is expected to be similar to the value set for
+      _restr_equal_distance_class.target_weight_param.
+;
+    _name.category_id             restr_equal_distance_class
+    _name.object_id               esd
     _type.purpose                 Number
     _type.source                  Derived
     _type.container               Single
@@ -1467,30 +1465,6 @@ save_restr_equal_torsion_class.average
 
 save_
 
-save_restr_equal_torsion_class.average_su
-
-    _definition.id                '_restr_equal_torsion_class.average_su'
-    _alias.definition_id          '_restr_equal_torsion_class_esd'
-    _definition.update            2014-07-30
-    _description.text
-;
-      The actual estimated standard deviation of the distances in the
-      class from their average after refinement.
-      This number is expected to be similar to the value set for
-      _restr_equal_torsion_class.target_weight_param.
-;
-    _name.category_id             restr_equal_torsion_class
-    _name.object_id               average_su
-    _name.linked_item_id          '_restr_equal_torsion_class.average'
-    _type.purpose                 SU
-    _type.source                  Related
-    _type.container               Single
-    _type.contents                Real
-    _enumeration.range            0:
-    _units.code                   angstroms
-
-save_
-
 save_restr_equal_torsion_class.class_id
 
     _definition.id                '_restr_equal_torsion_class.class_id'
@@ -1550,6 +1524,29 @@ save_restr_equal_torsion_class.diff_max
 
 save_
 
+save_restr_equal_torsion_class.esd
+
+    _definition.id                '_restr_equal_torsion_class.esd'
+    _alias.definition_id          '_restr_equal_torsion_class_esd'
+    _definition.update            2026-01-27
+    _description.text
+;
+      The actual estimated standard deviation of the distances in the
+      class from their average after refinement.
+      This number is expected to be similar to the value set for
+      _restr_equal_torsion_class.target_weight_param.
+;
+    _name.category_id             restr_equal_torsion_class
+    _name.object_id               average_su
+    _type.purpose                 Number
+    _type.source                  Derived
+    _type.container               Single
+    _type.contents                Real
+    _enumeration.range            0:
+    _units.code                   angstroms
+
+save_
+
 save_restr_equal_torsion_class.target_weight_param
 
     _definition.id
@@ -1561,7 +1558,7 @@ save_restr_equal_torsion_class.target_weight_param
 ;
       The weighting parameter = sqrt(1/weight).  This is the
       expectation value of the estimated standard deviation
-      (given in _restr_equal_torsion_class.average_su)
+      (given in _restr_equal_torsion_class.esd)
       of the torsion angles in the class from their
       average after refinement.
       This value determines the weight assigned to the target.
@@ -2815,7 +2812,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2026-01-26
+         3.1.1                    2026-01-27
 ;
        Fixed a CIF2 syntax error.
 
@@ -2854,4 +2851,9 @@ save_
 
        Changed _type.purpose of _restr_rigid_body_class.class_id from
        'Encode' to 'Link'. (bm)
+
+       2026-01-27: Changed *.average_su to *.esd in the categories
+       RESTR_EQUAL_ANGLE_CLASS, RESTR_EQUAL_DISTANCE_CLASS and
+       RESTR_EQUAL_TORSION_CLASS as these are true statistical e.s.d.s.
+       Changed their _type.source to 'Derived' (bm).
 ;

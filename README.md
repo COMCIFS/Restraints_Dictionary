@@ -1,6 +1,6 @@
-[![CIF syntax check](https://github.com/COMCIFS/Restraints_Dictionary/actions/workflows/main.yml/badge.svg)](https://github.com/COMCIFS/Restraints_Dictionary/actions)
+[![CIF syntax check](https://github.com/COMCIFS/cif_restr/actions/workflows/main.yml/badge.svg)](https://github.com/COMCIFS/Restraints_Dictionary/actions)
 
-# Restraints Dictionary (rstrCIF)
+# Restraints Dictionary (restrCIF)
 
 CIF data item definitions for description of restraints or constraints applied in least-squares refinement of crystal structures.
 
@@ -20,7 +20,7 @@ Ways of contributing include:
 3. Commenting on already existing issues.
 4. Reviewing pull requests.
 
-If the "Github way" is not familiar to you, we suggest looking at [some closed issues](https://github.com/COMCIFS/Restraints_Dictionary/issues?q=is%3Aissue+is%3Aclosed) and [some closed pull requests](https://github.com/COMCIFS/Restraints_Dictionary/issues?q=is%3Apr+is%3Aclosed) to see how the process works.
+If the "Github way" is not familiar to you, we suggest looking at [some closed issues](https://github.com/COMCIFS/cif_restr/issues?q=is%3Aissue+is%3Aclosed) and [some closed pull requests](https://github.com/COMCIFS/cif_restr/issues?q=is%3Apr+is%3Aclosed) to see how the process works.
 You may also find [this wiki entry](https://github.com/COMCIFS/cif_core/wiki/Getting-started-with-Github-and-Git-for-development-of-CIF-dictionaries) helpful.
 
 ## Update guidelines

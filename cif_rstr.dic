@@ -15,7 +15,7 @@ data_CIF_RESTR
     _dictionary.title             CIF_RESTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2026-01-27
+    _dictionary.date              2026-01-28
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_restr/main/cif_rstr.dic
     _dictionary.ddl_conformance   4.2.0
@@ -116,11 +116,11 @@ save_restr.special_details
 
     _definition.id                '_restr.special_details'
     _alias.definition_id          '_restr_special_details'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-28
     _description.text
 ;
       Text describing any restraint or constraint that cannot be
-      described using any of the the other restraint items.
+      described using any of the other restraint items.
       See also _atom_site_restraints.
 ;
     _name.category_id            restr
@@ -2810,7 +2810,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2026-01-27
+         3.1.1                    2026-01-28
 ;
        Fixed a CIF2 syntax error.
 

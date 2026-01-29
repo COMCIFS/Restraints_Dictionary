@@ -211,19 +211,36 @@ save_restr_angle.diff
 
     _definition.id                '_restr_angle.diff'
     _alias.definition_id          '_restr_angle_diff'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       The difference between the target and the refined angle.
 ;
     _name.category_id             restr_angle
     _name.object_id               diff
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
     _units.code                   degrees
+
+save_
+
+save_restr_angle.diff_su
+
+    _definition.id                '_restr_angle.diff_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_angle.diff.
+;
+    _name.category_id             restr_angle
+    _name.object_id               diff_su
+    _name.linked_item_id          '_restr_angle.diff'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -377,18 +394,35 @@ save_restr_distance.diff
 
     _definition.id                '_restr_distance.diff'
     _alias.definition_id          '_restr_distance_diff'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       The difference between the target and the refined distance.
 ;
     _name.category_id             restr_distance
     _name.object_id               diff
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _units.code                   angstroms
+
+save_
+
+save_restr_distance.diff_su
+
+    _definition.id                '_restr_distance.diff_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_distance.diff.
+;
+    _name.category_id             restr_distance
+    _name.object_id               diff_su
+    _name.linked_item_id          '_restr_distance.diff'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -607,7 +641,7 @@ save_restr_distance_min.difference
 
     _definition.id                '_restr_distance_min.difference'
     _alias.definition_id          '_restr_distance_min_difference'
-    _definition.update            2026-01-23
+    _definition.update            2026-01-29
     _description.text
 ;
       The difference in angstroms between the refined distance
@@ -617,7 +651,7 @@ save_restr_distance_min.difference
 ;
     _name.category_id             restr_distance_min
     _name.object_id               difference
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
@@ -625,23 +659,60 @@ save_restr_distance_min.difference
 
 save_
 
+save_restr_distance_min.difference_su
+
+    _definition.id                '_restr_distance_min.difference_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      The difference in angstroms between the refined distance
+      of approach of the two atoms and the target distance B or F:
+
+      difference = D - B or D - F
+;
+    _name.category_id             restr_distance_min
+    _name.object_id               difference_su
+    _name.linked_item_id          '_restr_distance_min.difference'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_restr_distance_min.distance
 
     _definition.id                '_restr_distance_min.distance'
     _alias.definition_id          '_restr_distance_min_distance'
-    _definition.update            2026-01-23
+    _definition.update            2026-01-29
     _description.text
 ;
       The refined distance, D, between the two atoms.
 ;
     _name.category_id             restr_distance_min
     _name.object_id               distance
-    _type.purpose                 Number
-    _type.source                  Assigned
+    _type.purpose                 Measurand
+    _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
     _units.code                   angstroms
+
+save_
+
+save_restr_distance_min.distance_su
+
+    _definition.id                '_restr_distance_min.distance_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_distance_min.distance.
+;
+    _name.category_id             restr_distance_min
+    _name.object_id               distance_su
+    _name.linked_item_id          '_restr_distance_min.distance'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -943,7 +1014,7 @@ save_restr_equal_angle_class.diff_max
 
     _definition.id                '_restr_equal_angle_class.diff_max'
     _alias.definition_id          '_restr_equal_angle_class_diff_max'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       The maximum deviation of an angle in the class from the
@@ -951,12 +1022,29 @@ save_restr_equal_angle_class.diff_max
 ;
     _name.category_id             restr_equal_angle_class
     _name.object_id               diff_max
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
     _units.code                   degrees
+
+save_
+
+save_restr_equal_angle_class.diff_max_su
+
+    _definition.id                '_restr_equal_angle_class.diff_max_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_equal_angle_class.diff_max.
+;
+    _name.category_id             restr_equal_angle_class
+    _name.object_id               diff_max_su
+    _name.linked_item_id          '_restr_equal_angle_class.diff_max'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -1196,7 +1284,7 @@ save_restr_equal_distance_class.diff_max
 
     _definition.id                '_restr_equal_distance_class.diff_max'
     _alias.definition_id          '_restr_equal_distance_class_diff_max'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       The maximum deviation of a distance in the class from the
@@ -1204,12 +1292,29 @@ save_restr_equal_distance_class.diff_max
 ;
     _name.category_id             restr_equal_distance_class
     _name.object_id               diff_max
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
     _units.code                   angstroms
+
+save_
+
+save_restr_equal_distance_class.diff_max_su
+
+    _definition.id                '_restr_equal_distance_class.diff_max_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_equal_distance_class.diff_max.
+;
+    _name.category_id             restr_equal_distance_class
+    _name.object_id               diff_max_su
+    _name.linked_item_id          '_restr_equal_distance_class.diff_max'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -1505,7 +1610,7 @@ save_restr_equal_torsion_class.diff_max
 
     _definition.id                '_restr_equal_torsion_class.diff_max'
     _alias.definition_id          '_restr_equal_torsion_class_diff_max'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       The maximum deviation of a torsion angle in the class
@@ -1513,12 +1618,29 @@ save_restr_equal_torsion_class.diff_max
 ;
     _name.category_id             restr_equal_torsion_class
     _name.object_id               diff_max
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
     _units.code                   angstroms
+
+save_
+
+save_restr_equal_torsion_class.diff_max_su
+
+    _definition.id                '_restr_equal_torsion_class.diff_max_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_equal_torsion_class.diff_max.
+;
+    _name.category_id             restr_equal_torsion_class
+    _name.object_id               diff_max_su
+    _name.linked_item_id          '_restr_equal_torsion_class.diff_max'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -1887,7 +2009,7 @@ save_restr_plane.displacement
 
     _definition.id                '_restr_plane.displacement'
     _alias.definition_id          '_restr_plane_displacement'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       The distance between this atom and the best plane through
@@ -1895,12 +2017,29 @@ save_restr_plane.displacement
 ;
     _name.category_id             restr_plane
     _name.object_id               displacement
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
     _units.code                   angstroms
+
+save_
+
+save_restr_plane.displacement_su
+
+    _definition.id                '_restr_plane.displacement_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_plane.displacement.
+;
+    _name.category_id             restr_plane
+    _name.object_id               displacement_su
+    _name.linked_item_id          '_restr_plane.displacement'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -2044,7 +2183,7 @@ save_restr_plane_class.displacement_max
 
     _definition.id                '_restr_plane_class.displacement_max'
     _alias.definition_id          '_restr_plane_class_displacement_max'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       The distance in angstroms from the plane to the atom furthest
@@ -2052,12 +2191,29 @@ save_restr_plane_class.displacement_max
 ;
     _name.category_id             restr_plane_class
     _name.object_id               displacement_max
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
     _units.code                   angstroms
+
+save_
+
+save_restr_plane_class.displacement_max_su
+
+    _definition.id                '_restr_plane_class.displacement_max_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_plane_class.displacement_max.
+;
+    _name.category_id             restr_plane_class
+    _name.object_id               displacement_max_su
+    _name.linked_item_id          '_restr_plane_class.displacement_max'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -2391,18 +2547,35 @@ save_restr_torsion.diff
 
     _definition.id                '_restr_torsion.diff'
     _alias.definition_id          '_restr_torsion_diff'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       The difference between the target and the refined torsion angle.
 ;
     _name.category_id             restr_torsion
     _name.object_id               diff
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _units.code                   degrees
+
+save_
+
+save_restr_torsion.diff_su
+
+    _definition.id                '_restr_torsion.diff_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_torsion.diff.
+;
+    _name.category_id             restr_torsion
+    _name.object_id               diff_su
+    _name.linked_item_id          '_restr_torsion.diff'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -2610,7 +2783,7 @@ save_restr_u_rigid.diff
 
     _definition.id                '_restr_U_rigid.diff'
     _alias.definition_id          '_restr_U_rigid_diff'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       The difference between the components along the bond direction
@@ -2618,11 +2791,28 @@ save_restr_u_rigid.diff
 ;
     _name.category_id             restr_u_rigid
     _name.object_id               diff
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
     _units.code                   angstrom_squared
+
+save_
+
+save_restr_u_rigid.diff_su
+
+    _definition.id                '_restr_U_rigid.diff_su'
+    _definition.update            2026-01-29
+    _description.text
+;
+      Standard uncertainty of _restr_U_rigid.diff.
+;
+    _name.category_id             restr_u_rigid
+    _name.object_id               diff_su
+    _name.linked_item_id          '_restr_U_rigid.diff'
+    _units.code                   angstrom_squared
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -2860,4 +3050,7 @@ save_
        COMCIFS harmonisation project. (bm)
 
        2026-01-29: Added _enumeration.range to _restr_distance_min.F. (bm)
+
+       Changed _type.purpose to 'Measurand' and added *_su values for
+       parameters that can be refined with a standard uncertainty.
 ;

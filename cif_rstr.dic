@@ -116,11 +116,11 @@ save_restr.special_details
 
     _definition.id                '_restr.special_details'
     _alias.definition_id          '_restr_special_details'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-28
     _description.text
 ;
       Text describing any restraint or constraint that cannot be
-      described using any of the the other restraint items.
+      described using any of the other restraint items.
       See also _atom_site_restraints.
 ;
     _name.category_id            restr

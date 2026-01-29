@@ -15,7 +15,7 @@ data_CIF_RESTR
     _dictionary.title             CIF_RESTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2026-01-28
+    _dictionary.date              2026-01-29
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_restr/main/cif_rstr.dic
     _dictionary.ddl_conformance   4.2.0
@@ -668,7 +668,7 @@ save_restr_distance_min.f
 
     _definition.id                '_restr_distance_min.F'
     _alias.definition_id          '_restr_distance_min_F'
-    _definition.update            2014-06-29
+    _definition.update            2026-01-29
     _description.text
 ;
       See _restr_distance_min.A for description.
@@ -679,6 +679,7 @@ save_restr_distance_min.f
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
+    _enumeration.range            0:
     _units.code                   angstroms
 
 save_
@@ -2810,7 +2811,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2026-01-28
+         3.1.1                    2026-01-29
 ;
        Fixed a CIF2 syntax error.
 
@@ -2857,4 +2858,6 @@ save_
 
        Revised Head category name and _dictionary.namespace as agreed in
        COMCIFS harmonisation project. (bm)
+
+       2026-01-29: Added _enumeration.range to _restr_distance_min.F. (bm)
 ;

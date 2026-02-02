@@ -665,10 +665,7 @@ save_restr_distance_min.difference_su
     _definition.update            2026-01-29
     _description.text
 ;
-      The difference in angstroms between the refined distance
-      of approach of the two atoms and the target distance B or F:
-
-      difference = D - B or D - F
+      Standard uncertainty of _restr_distance_min.difference.
 ;
     _name.category_id             restr_distance_min
     _name.object_id               difference_su

@@ -15,10 +15,11 @@ data_CIF_RESTR
     _dictionary.title             CIF_RESTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2026-02-02
+    _dictionary.date              2026-04-30
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_restr/main/cif_rstr.dic
     _dictionary.ddl_conformance   4.2.0
+    _dictionary.licensing_SPDX    CC-BY-4.0
     _dictionary.namespace         CifCore
     _description.text
 ;
@@ -2998,7 +2999,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2026-02-02
+         3.1.1                    2026-04-30
 ;
        Fixed a CIF2 syntax error.
 

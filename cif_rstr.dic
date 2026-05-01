@@ -455,7 +455,7 @@ save_restr_distance.target
 
     _definition.id                '_restr_distance.target'
     _alias.definition_id          '_restr_distance_target'
-    _definition.update            2014-06-29
+    _definition.update            2026-02-02
     _description.text
 ;
       The expectation distance between the two atoms.
@@ -464,7 +464,7 @@ save_restr_distance.target
     _name.category_id             restr_distance
     _name.object_id               target
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _units.code                   angstroms
@@ -475,7 +475,7 @@ save_restr_distance.target_weight_param
 
     _definition.id                '_restr_distance.target_weight_param'
     _alias.definition_id          '_restr_distance_target_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-02-02
     _description.text
 ;
       Weighting parameter = sqrt(1/weight).
@@ -489,7 +489,7 @@ save_restr_distance.target_weight_param
     _name.category_id             restr_distance
     _name.object_id               target_weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0
@@ -583,7 +583,7 @@ save_restr_distance_min.b
 
     _definition.id                '_restr_distance_min.B'
     _alias.definition_id          '_restr_distance_min_B'
-    _definition.update            2014-06-29
+    _definition.update            2020-02-02
     _description.text
 ;
       See _restr_distance_min.A for description.
@@ -591,7 +591,7 @@ save_restr_distance_min.b
     _name.category_id             restr_distance_min
     _name.object_id               B
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -737,7 +737,7 @@ save_restr_distance_min.f
 
     _definition.id                '_restr_distance_min.F'
     _alias.definition_id          '_restr_distance_min_F'
-    _definition.update            2026-01-29
+    _definition.update            2026-02-02
     _description.text
 ;
       See _restr_distance_min.A for description.
@@ -745,7 +745,7 @@ save_restr_distance_min.f
     _name.category_id             restr_distance_min
     _name.object_id               F
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -1073,7 +1073,7 @@ save_restr_equal_angle_class.target_weight_param
 
     _definition.id                '_restr_equal_angle_class.target_weight_param'
     _alias.definition_id          '_restr_equal_angle_class_target_weight_param'
-    _definition.update            2026-01-26
+    _definition.update            2026-02-02
     _description.text
 ;
       The weighting parameter = sqrt(1/weight).
@@ -1086,7 +1086,7 @@ save_restr_equal_angle_class.target_weight_param
     _name.category_id             restr_equal_angle_class
     _name.object_id               target_weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -1345,7 +1345,7 @@ save_restr_equal_distance_class.target_weight_param
         '_restr_equal_distance_class.target_weight_param'
     _alias.definition_id
         '_restr_equal_distance_class_target_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-02-02
     _description.text
 ;
       The weighting parameter = sqrt(1/weight).
@@ -1358,7 +1358,7 @@ save_restr_equal_distance_class.target_weight_param
     _name.category_id             restr_equal_distance_class
     _name.object_id               target_weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -1671,7 +1671,7 @@ save_restr_equal_torsion_class.target_weight_param
         '_restr_equal_torsion_class.target_weight_param'
     _alias.definition_id
         '_restr_equal_torsion_class_target_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-02-02
     _description.text
 ;
       The weighting parameter = sqrt(1/weight).  This is the
@@ -1686,7 +1686,7 @@ save_restr_equal_torsion_class.target_weight_param
     _name.category_id             restr_equal_torsion_class
     _name.object_id               target_weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -1725,7 +1725,7 @@ save_restr_parameter.atom_coefficient
 
     _definition.id                '_restr_parameter.atom_coefficient'
     _alias.definition_id          '_restr_parameter_atom_coefficient'
-    _definition.update            2026-01-26
+    _definition.update            2026-02-02
     _description.text
 ;
       A parameter that scales the quantity being restrained.
@@ -1735,7 +1735,7 @@ save_restr_parameter.atom_coefficient
     _name.category_id             restr_parameter
     _name.object_id               atom_coefficient
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.default          1.
@@ -1888,7 +1888,7 @@ save_restr_parameter_class.target
 
     _definition.id                '_restr_parameter_class.target'
     _alias.definition_id          '_restr_parameter_class_target'
-    _definition.update            2026-01-26
+    _definition.update            2026-02-02
     _description.text
 ;
       The target value for the sum of values of the appropriate
@@ -1897,7 +1897,7 @@ save_restr_parameter_class.target
     _name.category_id             restr_parameter_class
     _name.object_id               target
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _units.code                   none
@@ -1908,7 +1908,7 @@ save_restr_parameter_class.target_weight_param
 
     _definition.id                '_restr_parameter_class.target_weight_param'
     _alias.definition_id          '_restr_parameter_class_target_weight_param'
-    _definition.update            2026-01-26
+    _definition.update            2026-02-02
     _description.text
 ;
       Weighting parameter = sqrt(1/weight).
@@ -1923,7 +1923,7 @@ save_restr_parameter_class.target_weight_param
     _name.category_id             restr_parameter_class
     _name.object_id               target_weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0
@@ -2082,7 +2082,7 @@ save_restr_plane.target_weight_param
 
     _definition.id                '_restr_plane.target_weight_param'
     _alias.definition_id          '_restr_plane_target_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-02-02
     _description.text
 ;
       The weighting parameter = sqrt(1/weight).
@@ -2093,7 +2093,7 @@ save_restr_plane.target_weight_param
     _name.category_id             restr_plane
     _name.object_id               target_weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -2461,7 +2461,7 @@ save_restr_torsion.angle_target
 
     _definition.id                '_restr_torsion.angle_target'
     _alias.definition_id          '_restr_torsion_angle_target'
-    _definition.update            2014-06-29
+    _definition.update            2026-02-02
     _description.text
 ;
       The angle in degrees to which the torsion angle is restrained.
@@ -2471,7 +2471,7 @@ save_restr_torsion.angle_target
     _name.category_id             restr_torsion
     _name.object_id               angle_target
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            -180:180
@@ -2629,7 +2629,7 @@ save_restr_torsion.weight_param
 
     _definition.id                '_restr_torsion.weight_param'
     _alias.definition_id          '_restr_torsion_weight_param'
-    _definition.update            2026-01-26
+    _definition.update            2026-02-02
     _description.text
 ;
       Weighting parameter = sqrt(1/weight).
@@ -2643,7 +2643,7 @@ save_restr_torsion.weight_param
     _name.category_id             restr_torsion
     _name.object_id               weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -2693,7 +2693,7 @@ save_restr_u_iso.weight_param
 
     _definition.id                '_restr_U_iso.weight_param'
     _alias.definition_id          '_restr_U_iso_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-02-02
     _description.text
 ;
       The expectation value of the difference between
@@ -2704,7 +2704,7 @@ save_restr_u_iso.weight_param
     _name.category_id             restr_U_iso
     _name.object_id               weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
@@ -2842,7 +2842,7 @@ save_restr_u_rigid.target_weight_param
 
     _definition.id                '_restr_U_rigid.target_weight_param'
     _alias.definition_id          '_restr_U_rigid_target_weight_param'
-    _definition.update            2026-01-26
+    _definition.update            2026-02-02
     _description.text
 ;
      The weighting parameter = sqrt(1/weight).
@@ -2856,7 +2856,7 @@ save_restr_u_rigid.target_weight_param
     _name.category_id             restr_u_rigid
     _name.object_id               target_weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.default          0
@@ -2960,7 +2960,7 @@ save_restr_u_similar.weight_param
 
     _definition.id                '_restr_U_similar.weight_param'
     _alias.definition_id          '_restr_U_similar_weight_param'
-    _definition.update            2014-06-29
+    _definition.update            2026-02-02
     _description.text
 ;
       The expectation value of the difference between the
@@ -2971,7 +2971,7 @@ save_restr_u_similar.weight_param
     _name.category_id             restr_u_similar
     _name.object_id               weight_param
     _type.purpose                 Number
-    _type.source                  Derived
+    _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:

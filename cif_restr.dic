@@ -69,10 +69,10 @@ data_CIF_RESTR
 
     Attention is drawn to existing items in the core dictionary that flag
     whether items have been restrained or constrained:
-      _atom_site_refinement_flags_adp
-      _atom_site_refinement_flags_occupation
-      _atom_site_refinement_flags_posn
-      _atom_site_restraints
+      _atom_site.refinement_flags_ADP
+      _atom_site.refinement_flags_occupancy
+      _atom_site.refinement_flags_posn
+      _atom_site.restraints
 ;
 
 save_CIF_RESTR_HEAD
@@ -122,7 +122,7 @@ save_restr.special_details
 ;
       Text describing any restraint or constraint that cannot be
       described using any of the other restraint items.
-      See also _atom_site_restraints.
+      See also _atom_site.restraints.
 ;
     _name.category_id            restr
     _name.object_id              special_details
@@ -806,7 +806,8 @@ save_RESTR_EQUAL_ANGLE
 ;
       Items in this category list the atoms defining the angles
       that are restrained to be equal in the final refinement.
-      _atom_site_label_2 is at the apex of the angle.
+      The vertex atom in each angle is identified by
+      _restr_equal_angle.atom_site_label_2.
 ;
     _name.category_id             CIF_RESTR_HEAD
     _name.object_id               RESTR_EQUAL_ANGLE
